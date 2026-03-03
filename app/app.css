@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+html,
+body {
+  @apply bg-white dark:bg-gray-950;
+
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+  }
+}
+
+.cta-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-shimmer::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  transform: rotate(45deg);
+  animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%) rotate(45deg); }
+  100% { transform: translateX(100%) rotate(45deg); }
+}
+
+.live-dot {
+  animation: blink 1.5s ease-in-out infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.8); }
+}
+
+.urgency-pulse {
+  animation: pulse-text 2s infinite;
+}
+
+@keyframes pulse-text {
+  0%, 100% { text-shadow: 0 0 0px transparent; }
+  50% { text-shadow: 0 0 15px rgba(255, 205, 17, 0.3); }
+}
+
+.fab-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.grid-hero {
+  background-image: repeating-linear-gradient(0deg, rgba(255,255,255,0.06) 0px, rgba(255,255,255,0.06) 1px, transparent 1px, transparent 48px), 
+                    repeating-linear-gradient(90deg, rgba(255,255,255,0.06) 0px, rgba(255,255,255,0.06) 1px, transparent 1px, transparent 48px);
+}
+
+.grid-light {
+  background-image: repeating-linear-gradient(0deg, #000 0px, #000 1px, transparent 1px, transparent 48px), 
+                    repeating-linear-gradient(90deg, #000 0px, #000 1px, transparent 1px, transparent 48px);
+}
+
+.grid-estrutura {
+  background-image: repeating-linear-gradient(0deg, #000 0px, #000 1px, transparent 1px, transparent 40px), 
+                    repeating-linear-gradient(90deg, #000 0px, #000 1px, transparent 1px, transparent 40px);
+}
+
+.hazard-stripe {
+  background: repeating-linear-gradient(135deg, #1A3460 0px, #1A3460 10px, #FFCD11 10px, #FFCD11 20px);
+}
