@@ -1,7 +1,15 @@
-import { Award, Clock, Instagram, Mail, MapPin, Phone, Shield } from "lucide-react";
-import {COMPANY_INFO} from '../landing-page/data'
+import {
+  Award,
+  Clock,
+  Instagram,
+  Mail,
+  MapPin,
+  Phone,
+  Shield,
+} from 'lucide-react'
+import { COMPANY_INFO } from '../landing-page/data'
 export default function Footer() {
-    return (
+  return (
     <footer
       className='bg-linear-to-b from-[#0c162d] to-[#0f1419] text-white p-4'
       role='contentinfo'>
@@ -19,9 +27,6 @@ export default function Footer() {
                 <div className='text-[10px] sm:text-xs text-(--neutral-400) uppercase tracking-wider mb-0.5'>
                   Peças Originais
                 </div>
-                <div className='text-xs sm:text-sm font-bold text-white'>
-                  100% Certificadas
-                </div>
               </div>
             </div>
 
@@ -31,14 +36,6 @@ export default function Footer() {
                   className='w-6 h-6 text-(--secondary)'
                   aria-hidden='true'
                 />
-              </div>
-              <div>
-                <div className='text-[10px] sm:text-xs text-(--neutral-400) uppercase tracking-wider mb-0.5'>
-                  Certificação
-                </div>
-                <div className='text-xs sm:text-sm font-bold text-white'>
-                  ISO 9001:2015
-                </div>
               </div>
             </div>
 
@@ -88,7 +85,7 @@ export default function Footer() {
           <div className='sm:col-span-2 lg:col-span-3 flex flex-col items-center sm:items-start text-center sm:text-left'>
             <div className='mb-1'>
               <img
-                src='/logo.png'
+                src='/logo.webp'
                 alt='Mg Tratorpeças - Peças para maquinas pesadas e Máquinas Pesadas'
                 className='object-contain'
                 width={220}
@@ -202,28 +199,28 @@ export default function Footer() {
             </h4>
 
             <div className='grid grid-cols-1 lg:grid-cols-1 gap-3'>
-                <div
-                  key={COMPANY_INFO.name}
-                  className='bg-[var(--neutral-800)]/40 border border-[var(--neutral-700)] rounded-2xl p-4 hover:border-[var(--primary)]/50 transition-all'>
-                  <div className='flex items-start gap-3'>
-                    <div className='w-10 h-10 bg-[var(--primary)]/10 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-[var(--primary)]/20 transition-colors'>
-                      <MapPin
-                        className='w-5 h-5 text-[var(--secondary)]'
-                        aria-hidden='true'
-                      />
+              <div
+                key={COMPANY_INFO.name}
+                className='bg-[var(--neutral-800)]/40 border border-[var(--neutral-700)] rounded-2xl p-4 hover:border-[var(--primary)]/50 transition-all'>
+                <div className='flex items-start gap-3'>
+                  <div className='w-10 h-10 bg-[var(--primary)]/10 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-[var(--primary)]/20 transition-colors'>
+                    <MapPin
+                      className='w-5 h-5 text-[var(--secondary)]'
+                      aria-hidden='true'
+                    />
+                  </div>
+                  <div className='flex-1 pt-0.5'>
+                    <div className='font-bold text-white text-sm mb-1.5'>
+                      {COMPANY_INFO.name}
                     </div>
-                    <div className='flex-1 pt-0.5'>
-                      <div className='font-bold text-white text-sm mb-1.5'>
-                        {COMPANY_INFO.name}
-                      </div>
-                      <p className='text-xs text-[var(--neutral-400)] leading-relaxed'>
-                        {COMPANY_INFO.addressLine}
-                        <br />
-                        {COMPANY_INFO.cityStateDisplay}
-                      </p>
-                    </div>
+                    <p className='text-xs text-[var(--neutral-400)] leading-relaxed'>
+                      {COMPANY_INFO.addressLine}
+                      <br />
+                      {COMPANY_INFO.cityStateDisplay}
+                    </p>
                   </div>
                 </div>
+              </div>
 
               <div className=' bg-gradient-to-br from-[var(--primary)]/10 to-[var(--primary)]/5 border border-[var(--primary)]/20 rounded-2xl p-4 mt-2'>
                 <div className='text-xs sm:text-sm text-[var(--neutral-300)] flex items-center gap-3'>
@@ -241,8 +238,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-
-
     </footer>
-    )
+  )
 }

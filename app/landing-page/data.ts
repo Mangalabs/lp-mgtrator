@@ -16,7 +16,7 @@ import {
 export const FONT_HEADING = "'Barlow Condensed', sans-serif"
 export const FONT_BODY = "'Barlow', sans-serif"
 
-export const WA_LINK = 'https://wa.me/5563999828455'
+export const WA_LINK = 'https://wa.me/5585991911540'
 
 export const C = {
   bg: '#F5F3EF',
@@ -65,8 +65,8 @@ export const C = {
 
 export const COMPANY_INFO = {
   name: 'MG TratorPeças',
-  phone: '(63) 99982-8455',
-  phoneDisplay: '(63) 99982-8455',
+  phone: '(85) 99191-1540',
+  phoneDisplay: '(85) 99191-1540',
   whatsappLink: WA_LINK,
   workingHours: 'Seg - Sex: 08h às 18h',
   topbarWorkingHours: 'Seg a Sex 08h-18h',
@@ -75,8 +75,8 @@ export const COMPANY_INFO = {
   cityStateDisplay: 'São Luís - MA',
   email: 'comercial@mgtratorpecas.com.br',
   instagram: 'https://www.instagram.com/mg_tratorpecas_/',
-    instagramHandle: '@mgtratorpecas',
-};
+  instagramHandle: '@mgtratorpecas',
+}
 
 export const NAV_ITEMS = [
   { label: 'MÁQUINAS', href: '#maquinas' },
@@ -86,7 +86,6 @@ export const NAV_ITEMS = [
 ]
 
 export const HERO_FEATURES = [
-  { icon: ShieldCheck, text: 'Certificação ISO' },
   { icon: Truck, text: 'Envio todo Brasil' },
   { icon: PackageCheck, text: '5.000+ peças em estoque' },
   { icon: Award, text: 'Nota Fiscal garantida' },
@@ -104,12 +103,6 @@ export const HERO_STATS = [
     suffix: 'H',
     label: 'DESPACHO NO MESMO DIA',
     icon: Truck,
-  },
-  {
-    numValue: 12,
-    suffix: 'X',
-    label: 'SEM JUROS NO CARTÃO',
-    icon: Zap,
   },
   {
     numValue: 4.9,
@@ -135,8 +128,8 @@ export const HIGHLIGHT_FEATURES = [
   },
   {
     icon: React.createElement(CreditCard, { className: 'w-7 h-7' }),
-    title: 'PARCELE EM 12X',
-    description: 'No cartão',
+    title: 'PARCELAMENTO',
+    description: 'Boleto bancário sob análise ou cartão de crédito',
   },
   {
     icon: React.createElement(QrCode, { className: 'w-7 h-7' }),
@@ -153,7 +146,7 @@ export const ESTRUTURA_CARDS = [
   },
   {
     title: 'ATENDIMENTO TÉCNICO VIA WHATSAPP',
-    text: 'Informe o modelo e chassi — nossa equipe identifica a peça exata e envia o orçamento em minutos.',
+    text: 'Informe o modelo, código e série — nossa equipe identifica a peça exata e envia o orçamento em minutos.',
     code: 'TEC-002',
   },
   {
@@ -170,63 +163,49 @@ export const ESTRUTURA_DISTRIBUICAO_STATS = [
 
 export const ESTRUTURA_PARTS = [
   {
-    img: 'https://images.unsplash.com/photo-1701448149957-b96dbd1926ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoeWRyYXVsaWMlMjBjeWxpbmRlciUyMG1hY2hpbmUlMjBwYXJ0JTIwY2xvc2V1cHxlbnwxfHx8fDE3NzIzMDk5MjB8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    img: '/bucha.webp',
     label: 'HIDRÁULICA',
-    code: 'HYD',
   },
   {
-    img: 'https://images.unsplash.com/photo-1629409669372-e326fb4253c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoZWF2eSUyMGVxdWlwbWVudCUyMHRyYWNrJTIwY2hhaW4lMjB1bmRlcmNhcnJpYWdlfGVufDF8fHx8MTc3MjMwOTkyMHww&ixlib=rb-4.1.0&q=80&w=1080',
+    img: '/rolete.webp',
     label: 'MAT. RODANTE',
-    code: 'TRK',
   },
   {
-    img: 'https://images.unsplash.com/photo-1727413434026-0f8314c037d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaWVzZWwlMjBlbmdpbmUlMjBwYXJ0cyUyMG1lY2hhbmljYWwlMjB3b3Jrc2hvcHxlbnwxfHx8fDE3NzIzMDk5MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    img: '/motor-e-transmissao.webp',
     label: 'MOTOR',
-    code: 'ENG',
   },
   {
-    img: 'https://images.unsplash.com/photo-1703432746161-cb715e83b032?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbmclMjBleGNhdmF0b3IlMjBidWNrZXQlMjB0ZWV0aCUyMGNsb3NlJTIwdXB8ZW58MXx8fHwxNzcyMzA5OTIxfDA&ixlib=rb-4.1.0&q=80&w=1080',
+    img: '/dente.webp',
     label: 'FPS / DENTES',
-    code: 'GET',
   },
 ]
 
 export const ESTRUTURA_RESUME_STATS = [
   { value: '5.000+', label: 'PEÇAS EM ESTOQUE' },
   { value: '24H', label: 'DESPACHO' },
-  { value: '12X', label: 'PARCELE S/ JUROS' },
+  { value: 'S/C', label: 'PARCELE SOB ANÁLISE' },
 ]
 
 export const MACHINE_CARDS = [
   {
     title: 'Pá Carregadeira',
-    code: 'LDR-01',
-    image:
-      'https://images.unsplash.com/photo-1652248759121-2edb066a9557?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx3aGVlbCUyMGxvYWRlciUyMGhlYXZ5JTIwbWFjaGluZXJ5JTIweyB0eXBlOiBzdHJpbmcgfSwlMjB5ZWxsb3dlbnwxfHx8fDE3NzIyOTgwNjQxfDA&ixlib=rb-4.1.0&q=80&w=1080',
+    image: '/machines/pa-carregadeira.webp',
   },
   {
     title: 'Retroescavadeira',
-    code: 'BKH-02',
-    image:
-      'https://images.unsplash.com/photo-1664312616511-81fe2e745cb3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiYWNraG9lJTIwbG9hZGVyJTIwY29uc3RydWN0aW9uJTIwc2l0ZXxlbnwxfHx8fDE3NzIyOTkwMTh8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    image: '/machines/retroescavadeira.webp',
   },
   {
     title: 'Motoniveladora',
-    code: 'GRD-03',
-    image:
-      'https://images.unsplash.com/photo-1659500534416-961c11f0ff92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb3RvciUyMGdyYWRlciUyMHJvYWQlMjBjb25zdHJ1Y3Rpb258ZW58MXx8fHwxNzcyMjk4MDY0fDA&ixlib=rb-4.1.0&q=80&w=1080',
+    image: '/machines/motoniveladora.webp',
   },
   {
     title: 'Escavadeira',
-    code: 'EXC-04',
-    image:
-      'https://images.unsplash.com/photo-1751054619908-65d27a503ce8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxleGNhdmF0b3IlMjBtaW5pbmclMjBjb25zdHJ1Y3Rpb258ZW58MXx8fHwxNzcyMjk5MDE4fDA&ixlib=rb-4.1.0&q=80&w=1080',
+    image: '/machines/escavadeira.webp',
   },
   {
     title: 'Trator de Esteira',
-    code: 'TRK-05',
-    image:
-      'https://images.unsplash.com/photo-1675600653443-5394f8c626e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidWxsZG96ZXIlMjBjcmF3bGVyJTIwdHJhY3RvcnxlbnwxfHx8fHwxNzcyMjk5MDE4fDA&ixlib=rb-4.1.0&q=80&w=1080',
+    image: '/machines/trator-esteira.webp',
   },
 ]
 
@@ -234,32 +213,32 @@ export const POPULAR_PARTS = [
   {
     title: 'Material Rodante',
     desc: 'Esteiras · Roletes · Rodas guia',
-    img: 'https://images.unsplash.com/photo-1768861628347-e89c0c8b4a4b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMHRyYWNrJTIwY2hhaW4lMjBsaW5rJTIwaXNvbGF0ZWQlMjBkYXJrfGVufDF8fHx8MTc3MjMwNjkxMHww&ixlib=rb-4.1.0&q=80&w=1080',
+    img: '/rolete.webp',
   },
   {
     title: 'FPS',
     desc: 'Dentes · Unhas · Lâminas',
-    img: 'https://images.unsplash.com/photo-1624272842995-3aaa54ee7002?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxleGNhdmF0b3IlMjBidWNrZXQlMjB0b290aCUyMHN0ZWVsJTIwaXNvbGF0ZWR8ZW58MXx8fHwxNzcyMzA2OTExfDA&ixlib=rb-4.1.0&q=80&w=1080',
+    img: '/dente.webp',
   },
   {
     title: 'Motor e Transmissão',
     desc: 'Componentes · Filtros',
-    img: 'https://images.unsplash.com/photo-1683456062141-6c9f10664d1f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaWVzZWwlMjBlbmdpbmUlMjBwYXJ0cyUyMGNsb3NldXAlMjBkYXJrJTIwYmFja2dyb3VuZHxlbnwxfHx8fDE3NzIzMDY5MTZ8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    img: '/motor-e-transmissao.webp',
   },
   {
     title: 'Hidráulica',
     desc: 'Bombas · Cilindros · Mangueiras',
-    img: 'https://images.unsplash.com/photo-1701448149957-b96dbd1926ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoeWRyYXVsaWMlMjBwdW1wJTIwbWFjaGluZXJ5JTIwaXNvbGF0ZWR8ZW58MXx8fHwxNzcyMzA2OTExfDA&ixlib=rb-4.1.0&q=80&w=1080',
+    img: '/bucha.webp',
   },
   {
     title: 'Pinos e Buchas',
     desc: 'Articulação geral',
-    img: 'https://images.unsplash.com/photo-1758873263428-f4b2edb45fe1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtZXRhbCUyMGJlYXJpbmclMjBidXNoaW5nJTIwc3RlZWwlMjBwYXJ0JTIwaXNvbGF0ZWR8ZW58MXx8fHwxNzcyMzA2OTEyfDA&ixlib=rb-4.1.0&q=80&w=1080',
+    img: '/pino.webp',
   },
   {
     title: 'Filtros',
     desc: 'Manutenção preventiva',
-    img: 'https://images.unsplash.com/photo-1609745881196-bc2af0676777?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvaWwlMjBmaWx0ZXIlMjBjYW5pc3RlciUyMG1lY2hhbmljYWwlMjBwYXJ0JTIwZGFya3xlbnwxfHx8fDE3NzIzMDY5MTd8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    img: '/filtro.webp',
   },
 ]
 
@@ -267,22 +246,17 @@ export const FAQ_ITEMS = [
   {
     question: 'As peças são originais ou paralelas?',
     answer:
-      'Trabalhamos com peças originais e genuínas das marcas Volvo e Caterpillar, além de peças paralelas de alta qualidade com certificação ISO. Em todos os casos, informamos a procedência antes da compra para que você decida com total transparência.',
+      'Trabalhamos com peças originais das marcas Volvo e Caterpillar, além de peças paralelas de alta qualidade. Em todos os casos, informamos a procedência antes da compra para que você decida com total transparência.',
   },
   {
     question: 'Vocês enviam para todo o Brasil?',
     answer:
-      'Sim! Despachamos para todos os estados do Brasil via transportadora ou Correios (Sedex/PAC). Pedidos confirmados até as 14h são despachados no mesmo dia.',
-  },
-  {
-    question: 'Qual o prazo de entrega?',
-    answer:
-      'O prazo varia conforme a região. Em média, 2 a 7 dias úteis para capitais. Para regiões mais distantes, 5 a 12 dias úteis. Também oferecemos envio expresso sob consulta.',
+      'Sim! Despachamos para todos os estados do Brasil via transportadora (terrestre ou aéreo) ou Correios (Sedex/PAC). Pedidos confirmados até as 14h são despachados no mesmo dia.',
   },
   {
     question: 'Quais as formas de pagamento?',
     answer:
-      'Aceitamos Pix (com desconto), transferência bancária, boleto e cartão de crédito em até 12x. Para empresas, faturamento mediante análise de crédito.',
+      'Aceitamos Pix (com desconto), transferência bancária, cartão de crédito e boleto bancário. Para empresas, faturamento mediante análise de crédito.',
   },
   {
     question: 'Vocês emitem Nota Fiscal?',
@@ -292,7 +266,7 @@ export const FAQ_ITEMS = [
   {
     question: 'E se a peça não servir na minha máquina?',
     answer:
-      'Antes do envio, conferimos o número de série da sua máquina para garantir compatibilidade. Caso haja divergência, realizamos a troca sem custo adicional.',
+      'Antes do envio, conferimos o número de série da sua máquina para garantir compatibilidade.',
   },
   {
     question: 'Como faço para solicitar um orçamento?',
@@ -377,11 +351,11 @@ import {
   Phone,
   MapPin,
   Clock,
-} from 'lucide-react';
+} from 'lucide-react'
 
 export const CONFIG = {
-  WA_LINK: 'https://wa.me/5563999828455',
-  PHONE_DISPLAY: '(63) 99982-8455',
+  WA_LINK: 'https://wa.me/5585991911540',
+  PHONE_DISPLAY: '(85) 99191-1540',
   HOURS: 'Seg a Sex 08h-18h',
   ADDRESS: 'Av. Guajajaras, Tirirical · São Luís - MA',
   COLORS: {
@@ -430,8 +404,8 @@ export const CONFIG = {
   FONTS: {
     heading: "'Barlow Condensed', sans-serif",
     body: "'Barlow', sans-serif",
-  }
-};
+  },
+}
 
 export const NAV_ITEMS_ALT = [
   { label: 'MÁQUINAS', href: '#maquinas' },
@@ -439,67 +413,179 @@ export const NAV_ITEMS_ALT = [
   { label: 'ESTRUTURA', href: '#estrutura' },
   { label: 'AVALIAÇÕES', href: '#avaliacoes' },
   { label: 'FAQ', href: '#faq' },
-];
+]
 
 export const HIGHLIGHTS = [
   { icon: Truck, title: 'ENTREGA RÁPIDA', description: 'Para todo Brasil' },
   { icon: Warehouse, title: 'ESTOQUE PRÓPRIO', description: 'Pronta entrega' },
-  { icon: CreditCard, title: 'PARCELE EM 12X', description: 'No cartão' },
+  { icon: CreditCard, title: 'PARCELE SOB ANÁLISE', description: 'No cartão' },
   { icon: QrCode, title: 'DESCONTO NO PIX', description: 'À vista' },
-];
+]
 
 export const TRUST_INDICATORS = [
-  { icon: ShieldCheck, text: 'Certificação ISO' },
   { icon: Truck, text: 'Envio todo Brasil' },
   { icon: PackageCheck, text: '5.000+ peças em estoque' },
   { icon: Award, text: 'Nota Fiscal garantida' },
-];
+]
 
 export const HERO_STATS_ALT = [
-  { numValue: 5000, suffix: '+', label: 'PEÇAS EM ESTOQUE', icon: PackageCheck },
+  {
+    numValue: 5000,
+    suffix: '+',
+    label: 'PEÇAS EM ESTOQUE',
+    icon: PackageCheck,
+  },
   { numValue: 24, suffix: 'H', label: 'DESPACHO NO MESMO DIA', icon: Truck },
-  { numValue: 12, suffix: 'X', label: 'SEM JUROS NO CARTÃO', icon: Zap },
-  { numValue: 4.9, suffix: '★', label: 'NOTA NO GOOGLE', icon: Star, isDecimal: true },
-];
+  {
+    numValue: 4.9,
+    suffix: '★',
+    label: 'NOTA NO GOOGLE',
+    icon: Star,
+    isDecimal: true,
+  },
+]
 
 export const MACHINES_ALT = [
-  { title: 'Pá Carregadeira', code: 'LDR-01', image: 'https://images.unsplash.com/photo-1652248759121-2edb066a9557?auto=format&fit=crop&q=80&w=1080' },
-  { title: 'Retroescavadeira', code: 'BKH-02', image: 'https://images.unsplash.com/photo-1664312616511-81fe2e745cb3?auto=format&fit=crop&q=80&w=1080' },
-  { title: 'Motoniveladora', code: 'GRD-03', image: 'https://images.unsplash.com/photo-1659500534416-961c11f0ff92?auto=format&fit=crop&q=80&w=1080' },
-  { title: 'Escavadeira', code: 'EXC-04', image: 'https://images.unsplash.com/photo-1751054619908-65d27a503ce8?auto=format&fit=crop&q=80&w=1080' },
-  { title: 'Trator de Esteira', code: 'TRK-05', image: 'https://images.unsplash.com/photo-1675600653443-5394f8c626e1?auto=format&fit=crop&q=80&w=1080' },
-];
+  {
+    title: 'Pá Carregadeira',
+    image: '/machines/pa-carregadeira.webp',
+  },
+  {
+    title: 'Retroescavadeira',
+    image: '/machines/retroescavadeira.webp',
+  },
+  {
+    title: 'Motoniveladora',
+    image: '/machines/motoniveladora.webp',
+  },
+  {
+    title: 'Escavadeira',
+    image: '/machines/escavadeira.webp',
+  },
+  {
+    title: 'Trator de Esteira',
+    image: '/machines/trator-esteira.webp',
+  },
+]
 
 export const CATEGORIES_ALT = [
-  { title: 'Material Rodante', desc: 'Esteiras · Roletes · Rodas guia', img: 'https://images.unsplash.com/photo-1768861628347-e89c0c8b4a4b?auto=format&fit=crop&q=80&w=1080' },
-  { title: 'FPS', desc: 'Dentes · Unhas · Lâminas', img: 'https://images.unsplash.com/photo-1624272842995-3aaa54ee7002?auto=format&fit=crop&q=80&w=1080' },
-  { title: 'Motor e Transmissão', desc: 'Componentes · Filtros', img: 'https://images.unsplash.com/photo-1683456062141-6c9f10664d1f?auto=format&fit=crop&q=80&w=1080' },
-  { title: 'Hidráulica', desc: 'Bombas · Cilindros · Mangueiras', img: 'https://images.unsplash.com/photo-1701448149957-b96dbd1926ff?auto=format&fit=crop&q=80&w=1080' },
-  { title: 'Pinos e Buchas', desc: 'Articulação geral', img: 'https://images.unsplash.com/photo-1758873263428-f4b2edb45fe1?auto=format&fit=crop&q=80&w=1080' },
-  { title: 'Filtros', desc: 'Manutenção preventiva', img: 'https://images.unsplash.com/photo-1609745881196-bc2af0676777?auto=format&fit=crop&q=80&w=1080' },
-];
+  {
+    title: 'Material Rodante',
+    desc: 'Esteiras · Roletes · Rodas guia',
+    img: 'https://images.unsplash.com/photo-1768861628347-e89c0c8b4a4b?auto=format&fit=crop&q=80&w=1080',
+  },
+  {
+    title: 'FPS',
+    desc: 'Dentes · Unhas · Lâminas',
+    img: 'https://images.unsplash.com/photo-1624272842995-3aaa54ee7002?auto=format&fit=crop&q=80&w=1080',
+  },
+  {
+    title: 'Motor e Transmissão',
+    desc: 'Componentes · Filtros',
+    img: 'https://images.unsplash.com/photo-1683456062141-6c9f10664d1f?auto=format&fit=crop&q=80&w=1080',
+  },
+  {
+    title: 'Hidráulica',
+    desc: 'Bombas · Cilindros · Mangueiras',
+    img: 'https://images.unsplash.com/photo-1701448149957-b96dbd1926ff?auto=format&fit=crop&q=80&w=1080',
+  },
+  {
+    title: 'Pinos e Buchas',
+    desc: 'Articulação geral',
+    img: 'https://images.unsplash.com/photo-1758873263428-f4b2edb45fe1?auto=format&fit=crop&q=80&w=1080',
+  },
+  {
+    title: 'Filtros',
+    desc: 'Manutenção preventiva',
+    img: 'https://images.unsplash.com/photo-1609745881196-bc2af0676777?auto=format&fit=crop&q=80&w=1080',
+  },
+]
 
 export const ESTRUTURA_CARDS_ALT = [
-  { title: 'LOJA FÍSICA COM PRONTA ENTREGA', text: 'Retire sua peça direto no balcão, sem esperar frete. Atendimento presencial rápido e especializado.', code: 'EST-001' },
-  { title: 'ATENDIMENTO TÉCNICO VIA WHATSAPP', text: 'Informe o modelo e chassi — nossa equipe identifica a peça exata e envia o orçamento em minutos.', code: 'TEC-002' },
-  { title: 'ENVIO NO MESMO DIA PARA TODO BRASIL', text: 'Pedidos confirmados até 14h são despachados no mesmo dia. Sua máquina não pode esperar.', code: 'LOG-003' },
-];
+  {
+    title: 'LOJA FÍSICA COM PRONTA ENTREGA',
+    text: 'Retire sua peça direto no balcão, sem esperar frete. Atendimento presencial rápido e especializado.',
+    code: 'EST-001',
+  },
+  {
+    title: 'ATENDIMENTO TÉCNICO VIA WHATSAPP',
+    text: 'Informe o modelo, código e série — nossa equipe identifica a peça exata e envia o orçamento em minutos.',
+    code: 'TEC-002',
+  },
+  {
+    title: 'ENVIO NO MESMO DIA PARA TODO BRASIL',
+    text: 'Pedidos confirmados até 14h são despachados no mesmo dia. Sua máquina não pode esperar.',
+    code: 'LOG-003',
+  },
+]
 
 export const REVIEWS_ALT = [
-  { name: 'Carlos Mendes', time: 'Há 2 meses', text: 'Melhor loja de peças, ótimo preço e atendimento. A peça chegou antes do prazo. Recomendo demais!' },
-  { name: 'Roberto Silva', time: 'Há 1 semana', text: 'Equipe muito atenciosa. Conseguiram a peça da minha escavadeira que eu não achava em lugar nenhum.' },
-  { name: 'Transportadora JKL', time: 'Há 3 dias', text: 'Parceiros de longa data. Confiança total na qualidade das peças Caterpillar. Envio sempre rápido.' },
-  { name: 'Eng. Marcos Lima', time: 'Há 5 meses', text: 'Preço justo e nota fiscal certinha. Recomendo para quem precisa de agilidade e seriedade.' },
-  { name: 'Fazenda Santa Fé', time: 'Há 1 mês', text: 'Salvaram nossa safra com o envio rápido do motor de partida. Equipe nota 10!' },
-];
+  {
+    name: 'Carlos Mendes',
+    time: 'Há 2 meses',
+    text: 'Melhor loja de peças, ótimo preço e atendimento. A peça chegou antes do prazo. Recomendo demais!',
+  },
+  {
+    name: 'Roberto Silva',
+    time: 'Há 1 semana',
+    text: 'Equipe muito atenciosa. Conseguiram a peça da minha escavadeira que eu não achava em lugar nenhum.',
+  },
+  {
+    name: 'Transportadora JKL',
+    time: 'Há 3 dias',
+    text: 'Parceiros de longa data. Confiança total na qualidade das peças Caterpillar. Envio sempre rápido.',
+  },
+  {
+    name: 'Eng. Marcos Lima',
+    time: 'Há 5 meses',
+    text: 'Preço justo e nota fiscal certinha. Recomendo para quem precisa de agilidade e seriedade.',
+  },
+  {
+    name: 'Fazenda Santa Fé',
+    time: 'Há 1 mês',
+    text: 'Salvaram nossa safra com o envio rápido do motor de partida. Equipe nota 10!',
+  },
+]
 
 export const FAQ_ITEMS_ALT = [
-  { question: 'As peças são originais ou paralelas?', answer: 'Trabalhamos com peças originais e genuínas das marcas Volvo e Caterpillar, além de peças paralelas de alta qualidade com certificação ISO.' },
-  { question: 'Vocês enviam para todo o Brasil?', answer: 'Sim! Despachamos para todos os estados do Brasil via transportadora ou Correios (Sedex/PAC). Pedidos confirmados até as 14h são despachados no mesmo dia.' },
-  { question: 'Qual o prazo de entrega?', answer: 'O prazo varia conforme a região. Em média, 2 a 7 dias úteis para capitais. Para regiões mais distantes, 5 a 12 dias úteis.' },
-  { question: 'Quais as formas de pagamento?', answer: 'Aceitamos Pix (com desconto), transferência bancária, boleto e cartão de crédito em até 12x.' },
-  { question: 'Vocês emitem Nota Fiscal?', answer: 'Sim, emitimos Nota Fiscal eletrônica (NF-e) em todos os pedidos. Somos uma empresa regularizada.' },
-  { question: 'E se a peça não servir na minha máquina?', answer: 'Antes do envio, conferimos o número de série da sua máquina para garantir compatibilidade.' },
-  { question: 'Como faço para solicitar um orçamento?', answer: 'Basta clicar em qualquer botão de WhatsApp nesta página, informar o modelo da máquina e a peça que precisa.' },
-  { question: 'Trabalham com peças usadas?', answer: 'Não. Trabalhamos exclusivamente com peças novas — originais ou paralelas de alta qualidade.' },
-];
+  {
+    question: 'As peças são originais ou paralelas?',
+    answer:
+      'Trabalhamos com peças originais das marcas Volvo e Caterpillar, além de peças paralelas de primeira linha.',
+  },
+  {
+    question: 'Vocês enviam para todo o Brasil?',
+    answer:
+      'Sim! Despachamos para todos os estados do Brasil via transportadora ou Correios (Sedex/PAC). Pedidos confirmados até as 14h são despachados no mesmo dia.',
+  },
+  {
+    question: 'Qual o prazo de entrega?',
+    answer:
+      'O prazo varia conforme a região. Em média, 2 a 7 dias úteis para capitais. Para regiões mais distantes, 5 a 12 dias úteis.',
+  },
+  {
+    question: 'Quais as formas de pagamento?',
+    answer:
+      'Aceitamos Pix (com desconto), transferência bancária, boleto e cartão de crédito parcelado sob análise.',
+  },
+  {
+    question: 'Vocês emitem Nota Fiscal?',
+    answer:
+      'Sim, emitimos Nota Fiscal eletrônica (NF-e) em todos os pedidos. Somos uma empresa regularizada.',
+  },
+  {
+    question: 'E se a peça não servir na minha máquina?',
+    answer:
+      'Antes do envio, conferimos o número de série da sua máquina para garantir compatibilidade.',
+  },
+  {
+    question: 'Como faço para solicitar um orçamento?',
+    answer:
+      'Basta clicar em qualquer botão de WhatsApp nesta página, informar o modelo da máquina e a peça que precisa.',
+  },
+  {
+    question: 'Trabalham com peças usadas?',
+    answer:
+      'Não. Trabalhamos exclusivamente com peças novas — originais ou paralelas de alta qualidade.',
+  },
+]

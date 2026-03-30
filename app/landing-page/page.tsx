@@ -140,11 +140,11 @@ export default function LandingPage() {
                 style={{ color: C.blueTextMuted }}>
                 Peças{' '}
                 <strong style={{ color: C.blueText }}>
-                  Volvo e Caterpillar
+                  Volvo e Caterpillar,
                 </strong>{' '}
-                com certificação ISO. Despacho no mesmo dia, parcele em{' '}
                 <strong style={{ color: C.blueAccent }}>
-                  até 12x sem juros
+                  Pagamento facilitado no Pix, cartão de crédito e boleto
+                  bancário.
                 </strong>
                 .
               </motion.p>
@@ -182,18 +182,7 @@ export default function LandingPage() {
                 <div className='flex flex-col gap-1.5'>
                   <div
                     className='flex items-center gap-2 text-sm'
-                    style={{ color: C.blueTextMuted }}>
-                    <Clock
-                      className='w-4 h-4 flex-shrink-0'
-                      style={{ color: C.blueAccent }}
-                    />
-                    <span>
-                      Resposta em{' '}
-                      <strong style={{ color: C.blueText }}>
-                        menos de 5 min
-                      </strong>
-                    </span>
-                  </div>
+                    style={{ color: C.blueTextMuted }}></div>
                   <div
                     className='flex items-center gap-2 text-sm'
                     style={{ color: C.blueTextMuted }}>
@@ -278,7 +267,7 @@ export default function LandingPage() {
                     className='relative aspect-[16/10] group'
                     style={{ backgroundColor: C.blueBgAlt }}>
                     <img
-                      src='/fachada-saoluis.jpeg'
+                      src='/fachada.webp'
                       alt='Estrutura MG Tratorpeças'
                       className='size-full object-fit duration-500'
                     />
@@ -375,7 +364,7 @@ export default function LandingPage() {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 1.0 }}
-            className='grid grid-cols-2 md:grid-cols-4 gap-px rounded-sm overflow-hidden border-2'
+            className='grid grid-cols-3 gap-px rounded-sm overflow-hidden border-2'
             style={{
               borderColor: C.blueBorder,
               backgroundColor: C.blueBorder,
@@ -514,7 +503,7 @@ export default function LandingPage() {
                 Selecione o equipamento e receba um orçamento personalizado em
                 minutos.{' '}
                 <strong style={{ color: C.textPrimary }}>
-                  Atendemos todas as linhas da linha amarela
+                  Atendemos máquinas de linha amarela
                 </strong>{' '}
                 com peças originais e paralelas de primeira linha.
               </p>
@@ -530,9 +519,8 @@ export default function LandingPage() {
               responsive={MACHINE_BREAKPOINTS}>
               {MACHINE_CARDS.map((machine) => (
                 <MachineCard
-                  key={machine.code}
+                  key={machine.title}
                   title={machine.title}
-                  code={machine.code}
                   image={machine.image}
                 />
               ))}
@@ -570,39 +558,33 @@ export default function LandingPage() {
                 autoplayDelay={2800}
                 loop
                 speed={600}
-                centerMode
                 responsive={[{ breakpoint: 768, slidesToShow: 1 }]}>
                 {POPULAR_PARTS.map((cat) => (
                   <div key={cat.title} className='px-3'>
                     <div
-                      className='relative h-[220px] border-2 rounded-sm overflow-hidden flex flex-col items-center justify-end pb-6'
+                      className='border-2 rounded-sm flex flex-col items-center justify-center gap-3 py-8 px-4 text-center'
                       style={{
                         backgroundColor: C.bgAlt,
                         borderColor: C.border,
                       }}>
-                      <div className='absolute top-5 left-1/2 -translate-x-1/2 w-[100px] h-[100px] z-10 pointer-events-none'>
-                        <img
-                          src={cat.img}
-                          alt={cat.title}
-                          className='w-full h-full object-cover rounded-sm border'
-                          style={{ borderColor: C.borderLight }}
-                        />
-                      </div>
-                      <div className='relative z-10 text-center mt-auto px-3'>
-                        <div className='flex items-center justify-center gap-1.5 mb-1'>
-                          <h4
-                            className='uppercase tracking-wide'
-                            style={{
-                              fontFamily: FONT_HEADING,
-                              fontWeight: 700,
-                              fontSize: '0.9rem',
-                              color: C.textPrimary,
-                            }}>
-                            {cat.title}
-                          </h4>
-                        </div>
+                      <img
+                        src={cat.img}
+                        alt={cat.title}
+                        className='w-20 h-20 object-cover rounded-sm'
+                      />
+                      <div>
+                        <h4
+                          className='uppercase tracking-wide'
+                          style={{
+                            fontFamily: FONT_HEADING,
+                            fontWeight: 700,
+                            fontSize: '0.95rem',
+                            color: C.textPrimary,
+                          }}>
+                          {cat.title}
+                        </h4>
                         <p
-                          className='text-xs font-mono tracking-wider'
+                          className='text-xs font-mono tracking-wider mt-1'
                           style={{ color: C.textFaint }}>
                           {cat.desc}
                         </p>
@@ -940,7 +922,7 @@ export default function LandingPage() {
             <div className='mb-4 flex items-center justify-center md:justify-start gap-2'>
               <a href='#'>
                 <img
-                  src='/logo.png'
+                  src='/logo.webp'
                   alt='MG Trator Peças'
                   className='h-25 w-55 m-2'
                 />
@@ -996,7 +978,7 @@ export default function LandingPage() {
               </span>
             </div>
             <a
-              href={WA_LINK}
+              href='https://www.google.com/maps/dir//Mg+Tratorpe%C3%A7as+-+Tirirical,+S%C3%A3o+Lu%C3%ADs+-+MA/@-3.8602816,-38.4534453,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x7f69ab0f5328e97:0xaea389787bb7ac44!2m2!1d-44.2396321!2d-2.5764982?entry=ttu&g_ep=EgoyMDI2MDMyNC4wIKXMDSoASAFQAw%3D%3D'
               target='_blank'
               rel='noopener noreferrer'
               className='mt-4 inline-flex items-center gap-2 text-xs font-black uppercase px-5 py-2.5 rounded-sm border-b-[3px] hover:translate-y-[1px] hover:border-b-[2px] transition-all duration-150 text-white'
@@ -1022,7 +1004,7 @@ export default function LandingPage() {
             <span className='bold ml-1'>
               Desenvolvido com{' '}
               <img
-                src='/icon-copyright.png'
+                src='/icon-copyright.webp'
                 alt='amor'
                 className='h-4 w-4 inline mx-1 size-16'
               />{' '}

@@ -20,9 +20,7 @@ export default function EstruturaFisicaSection() {
       className='relative overflow-hidden'
       style={{ backgroundColor: C.bg }}>
       <div className='h-1' style={{ backgroundColor: C.accent }} />
-      <div
-        className='absolute inset-0 opacity-[0.03] pointer-events-none grid-estrutura'
-      />
+      <div className='absolute inset-0 opacity-[0.03] pointer-events-none grid-estrutura' />
       <div className='container mx-auto px-4 py-16 md:py-24 relative z-10'>
         <div className='grid lg:grid-cols-12 lg:gap-30 items-start'>
           <div className='lg:col-span-6 order-2 lg:order-1'>
@@ -68,9 +66,8 @@ export default function EstruturaFisicaSection() {
               transition={{ duration: 0.4, delay: 0.2 }}
               className='text-lg mb-8 max-w-md leading-relaxed'
               style={{ color: C.textMuted }}>
-              Loja física, galpão próprio e equipe técnica pronta pra te
-              atender. Aqui você vê onde sua peça sai — e fala com quem entende
-              do assunto.
+              Loja física e equipe técnica pronta pra te atender. Aqui você vê
+              de onde sua peça sai — e fala com quem entende do assunto.
             </motion.p>
             <div className='space-y-3 mb-8'>
               {ESTRUTURA_CARDS.map((card, i) => (
@@ -164,7 +161,7 @@ export default function EstruturaFisicaSection() {
                   </div>
                 </div>
                 <div className='flex justify-center items-center'>
-                    <BrazilMap/>
+                  <BrazilMap />
                 </div>
                 <div
                   className='flex items-center justify-between mt-3 pt-3'
@@ -204,7 +201,7 @@ export default function EstruturaFisicaSection() {
               </div>
               <div className='grid grid-cols-2 md:grid-cols-4 gap-3'>
                 {ESTRUTURA_PARTS.map((part) => (
-                  <div key={part.code} className='group relative'>
+                  <div key={part.label} className='group relative'>
                     <div
                       className='relative h-[140px] md:h-[170px] rounded-sm overflow-hidden border-2 cursor-pointer hover:border-[#FFCD11]! transition-colors duration-200'
                       style={{
@@ -222,13 +219,6 @@ export default function EstruturaFisicaSection() {
                           background: `linear-gradient(to top, ${C.machineCardOverlay}, ${C.machineCardOverlay}99, transparent)`,
                         }}
                       />
-                      <div className='absolute top-2 right-2 z-10'>
-                        <span
-                          className='text-[9px] font-mono font-bold tracking-widest'
-                          style={{ color: `${C.accent}B3` }}>
-                          {part.code}
-                        </span>
-                      </div>
                       <div className='absolute bottom-0 left-0 right-0 p-3 z-10'>
                         <span
                           className='text-white uppercase tracking-wide'

@@ -1,18 +1,13 @@
-import { ArrowRight } from "lucide-react"
+import { ArrowRight } from 'lucide-react'
 
-import {
-  C,
-  FONT_HEADING,
-} from '../landing-page/data'
+import { C, FONT_HEADING } from '../landing-page/data'
 
 export default function MachineCard({
   title,
   image,
-  code,
 }: {
   title: string
   image: string
-  code: string
 }) {
   return (
     <div className='px-2 py-3'>
@@ -42,9 +37,6 @@ export default function MachineCard({
         <div className='absolute top-4 right-4 flex flex-col items-end gap-1.5 z-10'>
           <div className='w-12 h-1 bg-[#FFCD11] group-hover:w-16 transition-all duration-300' />
           <div className='w-6 h-1 bg-[#555] group-hover:w-10 transition-all duration-300' />
-          <span className='text-sm font-mono text-[#FFCD11] mt-1 tracking-widest font-bold'>
-            {code}
-          </span>
         </div>
         <div className='absolute top-0 left-0 w-10 h-10 border-l-[3px] border-t-[3px] border-[#FFCD11] opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10' />
         <div className='absolute bottom-0 right-0 w-10 h-10 border-r-[3px] border-b-[3px] border-[#FFCD11] opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10' />
@@ -72,14 +64,14 @@ export default function MachineCard({
               ESTOQUE:{' '}
               <span className='text-[#16A34A] font-bold'>DISPONÍVEL</span>
             </span>
-            <a href={`whatsapp://send?phone=63999828455&text=Olá! Gostaria de saber mais sobre peças da máquina ${title}`} target="_blank" rel="noopener noreferrer">
-
-            <div className='bg-[#FFCD11] text-[#111] p-2.5 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200'>
-              
-              <ArrowRight size={18} strokeWidth={3} />
-            </div>
+            <a
+              href={`whatsapp://send?phone=5585991911540&text=Olá! Gostaria de saber mais sobre peças da máquina ${title}`}
+              target='_blank'
+              rel='noopener noreferrer'>
+              <div className='bg-[#FFCD11] text-[#111] p-2.5 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200'>
+                <ArrowRight size={18} strokeWidth={3} />
+              </div>
             </a>
-
           </div>
         </div>
       </div>

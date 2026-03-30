@@ -1,12 +1,9 @@
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
-import React from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import React from 'react'
+import { ChevronLeft, ChevronRight } from 'lucide-react'
 
-import {
-  C,
-} from '../landing-page/data'
-
+import { C } from '../landing-page/data'
 
 type EmblaBreakpoint = { breakpoint: number; slidesToShow: number }
 
@@ -51,18 +48,51 @@ export default function EmblaCarousel({
     return () => window.removeEventListener('resize', update)
   }, [slidesToShow, responsive])
 
+  // key={currentSlides} force-remonta o Embla quando o nº de slides muda,
+  // evitando o bug de posição/loop corrompido ao fazer reInit.
+  return (
+    <EmblaInner
+      key={currentSlides}
+      currentSlides={currentSlides}
+      loop={loop}
+      speed={speed}
+      autoplayDelay={autoplayDelay}
+      showDots={showDots}
+      showArrows={showArrows}>
+      {children}
+    </EmblaInner>
+  )
+}
+
+function EmblaInner({
+  children,
+  currentSlides,
+  loop,
+  speed,
+  autoplayDelay,
+  showDots,
+  showArrows,
+}: {
+  children: React.ReactNode
+  currentSlides: number
+  loop: boolean
+  speed: number
+  autoplayDelay: number
+  showDots: boolean
+  showArrows: boolean
+}) {
   const [emblaRef, emblaApi] = useEmblaCarousel(
     {
       loop,
-      align: centerMode ? 'center' : 'start',
+      align: 'start',
       slidesToScroll: 1,
       duration: speed / 25,
-      containScroll: centerMode ? undefined : 'trimSnaps',
+      containScroll: loop ? false : 'trimSnaps',
     },
     [
       Autoplay({
         delay: autoplayDelay,
-        stopOnInteraction: false,
+        stopOnInteraction: true,
         stopOnMouseEnter: true,
       }),
     ],
@@ -82,10 +112,6 @@ export default function EmblaCarousel({
     }
   }, [emblaApi])
 
-  React.useEffect(() => {
-    if (emblaApi) emblaApi.reInit()
-  }, [currentSlides, emblaApi])
-
   const slides = React.Children.toArray(children)
 
   return (
@@ -98,15 +124,6 @@ export default function EmblaCarousel({
               className='min-w-0 flex-shrink-0'
               style={{
                 flex: `0 0 ${100 / currentSlides}%`,
-                transition: centerMode
-                  ? 'opacity 0.4s ease, transform 0.4s ease'
-                  : undefined,
-                opacity: centerMode ? (index === selectedIndex ? 1 : 0.3) : 1,
-                transform: centerMode
-                  ? index === selectedIndex
-                    ? 'scale(1)'
-                    : 'scale(0.85)'
-                  : undefined,
               }}>
               {child}
             </div>

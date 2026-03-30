@@ -1,12 +1,7 @@
-import React from "react"
-import { Menu, Phone, X } from "lucide-react"
+import React from 'react'
+import { Menu, Phone, X } from 'lucide-react'
 
-import {
-  C,
-  FONT_HEADING,
-  NAV_ITEMS,
-  WA_LINK,
-} from '../landing-page/data'
+import { C, FONT_HEADING, NAV_ITEMS, WA_LINK } from '../landing-page/data'
 
 export default function StickyHeader() {
   const [scrolled, setScrolled] = React.useState(false)
@@ -28,7 +23,15 @@ export default function StickyHeader() {
       }}>
       <div className='container mx-auto px-4 flex items-center justify-between'>
         <a href='#'>
-          <img src="/logo.png" alt="MG Trator Peças" className="h-22 w-50 m-2" style={{filter: 'brightness(0) saturate(100%) invert(15%) sepia(58%) saturate(2786%) hue-rotate(210deg)'}} />
+          <img
+            src='/logo.webp'
+            alt='MG Trator Peças'
+            className='h-22 w-50 m-2'
+            style={{
+              filter:
+                'brightness(0) saturate(100%) invert(15%) sepia(58%) saturate(2786%) hue-rotate(210deg)',
+            }}
+          />
         </a>
         <nav className='hidden lg:flex items-center gap-6'>
           {NAV_ITEMS.map((item) => (
