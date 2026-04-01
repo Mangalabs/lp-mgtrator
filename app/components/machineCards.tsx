@@ -1,6 +1,6 @@
 import { ArrowRight } from 'lucide-react'
 
-import { C, FONT_HEADING } from '../landing-page/data'
+import { C, FONT_HEADING, WA_LINK } from '../landing-page/data'
 
 export default function MachineCard({
   title,
@@ -64,10 +64,7 @@ export default function MachineCard({
               ESTOQUE:{' '}
               <span className='text-[#16A34A] font-bold'>DISPONÍVEL</span>
             </span>
-            <a
-              href={`whatsapp://send?phone=5585991911540&text=Olá! Gostaria de saber mais sobre peças da máquina ${title}`}
-              target='_blank'
-              rel='noopener noreferrer'>
+            <a href={WA_LINK} target='_blank' rel='noopener noreferrer'>
               <div className='bg-[#FFCD11] text-[#111] p-2.5 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200'>
                 <ArrowRight size={18} strokeWidth={3} />
               </div>

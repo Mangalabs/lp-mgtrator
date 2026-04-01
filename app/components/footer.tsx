@@ -7,7 +7,7 @@ import {
   Phone,
   Shield,
 } from 'lucide-react'
-import { COMPANY_INFO } from '../landing-page/data'
+import { COMPANY_INFO, WA_LINK } from '../landing-page/data'
 export default function Footer() {
   return (
     <footer
@@ -138,7 +138,7 @@ export default function Footer() {
                     WhatsApp
                   </div>
                   <a
-                    href={`https://wa.me/${COMPANY_INFO.phone.replace(/\D/g, '')}`}
+                    href={WA_LINK}
                     target='_blank'
                     rel='noopener noreferrer'
                     className='text-sm sm:text-base text-white hover:text-[var(--secondary)] transition-colors font-semibold'
@@ -171,7 +171,7 @@ export default function Footer() {
 
             <div className='flex flex-col sm:flex-row lg:flex-col xl:flex-row gap-6'>
               <a
-                href={`https://wa.me/${COMPANY_INFO.phone.replace(/\D/g, '')}`}
+                href={WA_LINK}
                 target='_blank'
                 rel='noopener noreferrer'
                 className='flex-1 inline-flex justify-center items-center gap-2 bg-gradient-to-r from-[#25D366] to-[#20BD5A] hover:from-[#20BD5A] hover:to-[#1DA851] text-white  py-2 rounded-xl font-bold text-md transition-all shadow-lg hover:shadow-xl hover:scale-[1.02] active:scale-[0.98]'

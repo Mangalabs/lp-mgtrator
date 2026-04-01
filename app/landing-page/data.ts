@@ -16,7 +16,8 @@ import {
 export const FONT_HEADING = "'Barlow Condensed', sans-serif"
 export const FONT_BODY = "'Barlow', sans-serif"
 
-export const WA_LINK = 'https://wa.me/5585991911540'
+export const WA_LINK =
+  'https://tintim.link/whatsapp/d6ae85fb-b33f-4b08-b29b-e9b0ee72942a/135f8540-2a5d-4573-b52f-338b7b4d4d39'
 
 export const C = {
   bg: '#F5F3EF',
@@ -354,7 +355,8 @@ import {
 } from 'lucide-react'
 
 export const CONFIG = {
-  WA_LINK: 'https://wa.me/5585991911540',
+  WA_LINK:
+    'https://tintim.link/whatsapp/d6ae85fb-b33f-4b08-b29b-e9b0ee72942a/135f8540-2a5d-4573-b52f-338b7b4d4d39',
   PHONE_DISPLAY: '(85) 99191-1540',
   HOURS: 'Seg a Sex 08h-18h',
   ADDRESS: 'Av. Guajajaras, Tirirical · São Luís - MA',
